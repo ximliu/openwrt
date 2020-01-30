@@ -56,7 +56,7 @@ jobs:
           ./scripts/feeds install -a
       - name: Generate configuration file
         run: |
-          cp ./makeconfig.d/x86_64.config ./.config
+          cp ./makeconfig.d/RaspberryPi3b+ ../.config
           make defconfig
       - name: Make download
         run: |
